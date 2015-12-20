@@ -516,7 +516,7 @@ public class FabProgress extends FloatingActionButton {
                         break;
                     case FINAL_ANIM_SHOWING:
                         startProgress();
-                        beginProgressFinalAnimation();
+                        startProgressFinalAnimation();
                         break;
                 }
             }
@@ -574,9 +574,9 @@ public class FabProgress extends FloatingActionButton {
     }
 
     /**
-     * Begins the final animation, i.e. makes the spinning progress circle determinate.
+     * Starts the final animation, i.e. makes the spinning progress circle determinate.
      */
-    public void beginProgressFinalAnimation() {
+    public void startProgressFinalAnimation() {
         if (!mAnimationIsPlaying || mCompleteAnim.isRunning()) {
             return;
         }
