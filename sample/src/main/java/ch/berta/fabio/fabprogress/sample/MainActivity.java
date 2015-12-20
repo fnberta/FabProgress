@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fabProgress.beginProgressFinalAnimation();
+                fabProgress.startProgressFinalAnimation();
                 fabProgress2.stopProgress();
-                fb2.beginProgressFinalAnimation();
+                fb2.startProgressFinalAnimation();
             }
         });
     }
